@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Listing repo files:'
-                sh 'ls -l'
+                bat 'dir'
 
                 // Uncomment below if you have .java files in src folder and want to compile them
                 // echo 'Compiling Java files...'
