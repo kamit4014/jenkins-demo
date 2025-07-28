@@ -11,8 +11,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Listing repo files:'
-                bat 'dir'
-                echo 'webhook trigger test'
+                bat 'dir /s *.java'
+                //echo 'webhook trigger test'
 
                 // Uncomment below if you have .java files in src folder and want to compile them
                 // echo 'Compiling Java files...'
